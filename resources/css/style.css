@@ -27,6 +27,10 @@ html {
 .space-between {
   justify-content: space-between;
 }
+.justify-center {
+  justify-content: center;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -54,6 +58,7 @@ footer li {
   margin-right: 0.5rem;
 
 }
+
 /*Desktop logo styling*/
 .logo {
   display: flex;
@@ -62,18 +67,27 @@ footer li {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
+
 .logo img {
   height: 3rem;
 }
+
 .logo-colmar {
   font-weight: 600;
   color: #4A4A4A;
 }
+
 .logo-academy {
   font-weight: 200;
   color: #9B9B9B;
 }
 
+/* Mobile header image sizes */
+header .mobile img {
+  height: 3rem;
+}
+
+/* Fix header for smaller displays */
 @media (max-width: 670px) {
   .desktop {
     display: none;
@@ -81,5 +95,9 @@ footer li {
 
   .mobile {
     display: inherit;
+  }
+
+  footer .space-between {
+    justify-content: center;
   }
 }
