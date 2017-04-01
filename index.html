@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="global-horizontal-padding flex background-white">
+    <header class="globHorPadding flex background-white">
       <!-- Desktop layout  -->
       <div class="desktop width-100 space-between align-center">
         <div class="logo">
@@ -40,40 +40,72 @@
         <img src="./resources/images/ic-login.svg" alt="Login">
       </div>
     </header>
-    <!-- Section 1: two columns, 60% + 40% -->
-    <section class="banner global-horizontal-padding section-vertical-padding flex background-dark">
-      <div class="container-col-big container">
-        <!-- Image goes here -->
-        <img src="./resources/images/banner.jpg" alt="Learn">
-      </div>
-      <div class="container-col-small flex align-center">
-        <div class="column">
-          <h1>Learn something new every day</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="button capitalize">
-            <span>start here</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section 2: two columns, 60% + 40% -->
-    <section class="info global-horizontal-padding section-vertical-padding flex background-white">
-      <div class="container-col-big container">
-        <div class="column">
+
+
+
+    <!-- Section 1: two verticals, 60% + 40% -->
+    <section class="banner globHorPadding secVerPadding flex background-dark align-center">
+
+      <!-- Section content, will be divided in two columns -->
+      <div class="flex horizontal">
+
+        <!-- Right column, for imagery -->
+        <div class="container-col-big container">
           <!-- Image goes here -->
-          <img src="./resources/images/information-main.jpg" alt="Information">
-          <h2>It doesn&apos;t hurt to keep practicing</h2>
-          <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;</p>
-          <p class="quote">Emanuel, Senior Strategist at Hiring.com</p>
+          <img src="./resources/images/banner.jpg" alt="Learn">
         </div>
-      </div>
-      <div class="container-col-small flex align-center">
+
+        <!-- Left column, for ontent items, flowing vertically -->
+        <div class="container-col-small flex align-center">
+
+          <!-- This is necessary to insert some extra padding on the right
+          of the smaller column content without messing up with the
+          rest of the layout -->
+          <div class="bannerExtraPadding">
+
+
+            <div class="vertical">
+              <h1>Learn something new every day</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="button capitalize">
+                <span>start here</span>
+              </div>
+            </div>
+
+        </div>
+
+        </div>
 
       </div>
     </section>
+
+
+    <!-- Section 2: two verticals, 60% + 40% -->
+    <section class="info globHorPadding secVerPadding flex background-white align-center">
+
+      <!-- Section content, will be divided in two columns -->
+      <div class="flex horizontal">
+
+        <div class="container-col-big container">
+          <div class="vertical">
+            <!-- Image goes here -->
+            <img src="./resources/images/information-main.jpg" alt="Information">
+            <h2 class="topMarginBig">It doesn&apos;t hurt to keep practicing</h2>
+            <p class="topMarginBig">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;</p>
+            <p class="topMarginBig quote">Emanuel, Senior Strategist at Hiring.com</p>
+          </div>
+        </div>
+        <div class="container-col-small flex align-center">
+
+        </div>
+
+      </div>
+    </section>
+
+
     <!-- Section 3: thumbnails -->
-    <section class="info global-horizontal-padding section-vertical-padding flex background-light">
-      <div class="column">
+    <section class="info globHorPadding secVerPadding flex background-light">
+      <div class="vertical">
         <div>
           <h2>Start learning</h2>
         </div>
@@ -82,29 +114,38 @@
         </div>
       </div>
     </section>
-    <!-- Section 4: two columns, 60% + 40% -->
-    <section class="info global-horizontal-padding section-vertical-padding flex background-white">
-      <div class="column">
-        <div class="">
+    <!-- Section 4: two verticals, 60% + 40% -->
+    <section class="info globHorPadding secVerPadding flex background-white vertical align-center">
+        <!-- Setion title -->
+        <div class="sectionTitle">
           <h2>Thesis exhibit</h2>
         </div>
-        <div class="container-col-big container">
-          <div class="column">
-            <!-- Video goes here -->
-            <video src="./resources/videos/thesis.mp4" autoplay loop muted>
-              Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="./resources/videos/thesis.mp4">download it</a> and watch it with your favorite video player!
-            </video>
-            <h3>Reimagine urban</h3>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;</p>
+
+        <!-- Section content, will be divided in two columns -->
+        <div class="flex horizontal topMarginBig">
+
+          <!-- Video/Image box with caption -->
+          <div class="container-col-big container">
+            <div class="vertical">
+              <!-- Video goes here -->
+              <video src="./resources/videos/thesis.mp4" controls="play" loop muted>
+                Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="./resources/videos/thesis.mp4">download it</a> and watch it with your favorite video player!
+              </video>
+              <h3 class="topMarginSmall">Reimagine urban</h3>
+              <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;</p>
+            </div>
           </div>
-        </div>
-        <div class="container-col-small flex align-center">
+          <div class="container-col-small flex align-center">
+            <p>Line 1</p>
+            <p>Line 2</p>
+          </div>
+
 
         </div>
-      </div>
+
     </section>
     <!-- Footer -->
-    <footer class="global-horizontal-padding flex fineprint background-white">
+    <footer class="globHorPadding flex fineprint background-white">
       <div class="flex width-100 space-between align-center">
          <!-- Copyright Notice -->
         <div class="justify-center">

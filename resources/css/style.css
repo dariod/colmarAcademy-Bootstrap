@@ -14,20 +14,33 @@ html {
 }
 
 /*Shared styles*/
-.global-horizontal-padding {
+.globHorPadding {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.section-vertical-padding {
+.secVerPadding {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.topMarginBig {
+  margin-top: 2rem;
+}
+
+.topMarginSmall {
+  margin-top: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
-.column {
+.vertical {
   flex-direction: column;
 }
+
+.horizontal {
+  flex-direction: row;
+}
+
 .align-center {
   align-items: center;
 }
@@ -62,12 +75,10 @@ h1 {
 h2 {
   font-size: 1.8rem;
   font-weight: bold;
-  margin-top: 2rem;
 }
 h3 {
   font-size: 1.6rem;
   font-weight: bold;
-  margin-top: 1.5rem;
 }
 
 
@@ -156,24 +167,21 @@ header .mobile img {
 }
 .container-col-small {
   width: 40%;
-}
-
-
-/*Banner section*/
-.container-col-small {
   margin: 2.5rem;
   line-height: 1.2;
 }
 
-.banner .container-col-small .column {
-  width: 80%;
-}
 
+/*Banner section*/
 .banner p {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.4;
   margin: 2rem auto;
+}
+
+.bannerExtraPadding {
+  padding-right: 25%;
 }
 
 .button {
@@ -182,26 +190,26 @@ header .mobile img {
   padding: 0.5rem;
   font-size: 1rem;
   font-weight: lighter;
-  width: 100%;
   text-align: center;
   border-radius: 0.2rem;
 }
 
 /*Information section*/
+.sectionTitle {
+  text-align: center;
+}
+
 .info p {
   font-size: 1rem;
   font-weight: lighter;
   line-height: 1.5;
-  margin-top: 2rem;
 }
 
 .info .quote {
   font-size: 0.8rem;
   font-weight: 500;
-  margin-top: 2rem;
 }
 
 /*Thesis exhibit section*/
 .info h2 {
-  width: 100%;
 }
