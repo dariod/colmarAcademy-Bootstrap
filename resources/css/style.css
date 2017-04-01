@@ -37,7 +37,6 @@ html {
 .width-100 {
   width: 100%;
 }
-
 .fineprint {
   font-size: 0.6rem;
 }
@@ -56,7 +55,6 @@ footer li {
   display: inline-flex;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-
 }
 
 /*Desktop logo styling*/
@@ -88,7 +86,7 @@ header .mobile img {
 }
 
 /* Fix header for smaller displays */
-@media (max-width: 670px) {
+@media (max-width: 640px) {
   .desktop {
     display: none;
   }
