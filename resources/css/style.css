@@ -2,7 +2,7 @@
 html {
   font-family: "Helvetica";
   font-size: 16px;
-  background-color: gray;
+  color: #4A4A4A;
 }
 
 /*Initialise for desktop view*/
@@ -14,12 +14,19 @@ html {
 }
 
 /*Shared styles*/
-.std-padding {
+.global-horizontal-padding {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.section-vertical-padding {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .flex {
   display: flex;
+}
+.column {
+  flex-direction: column;
 }
 .align-center {
   align-items: center;
@@ -30,7 +37,6 @@ html {
 .justify-center {
   justify-content: center;
 }
-
 .capitalize {
   text-transform: capitalize;
 }
@@ -40,14 +46,25 @@ html {
 .fineprint {
   font-size: 0.6rem;
 }
+.background-dark {
+  background-color: #D8D8D8;
+}
+.background-light {
+  background-color: #EAEBEC;
+}
+.background-white {
+  background-color: #FFFFFF;
+}
+h1 {
+  font-weight: 900;
+  font-size: 2.3rem;
+}
 
 
 /*Header and footer styling*/
 header,
 footer {
   font-weight: lighter;
-  background-color: white;
-  color: #4A4A4A;
   height: 4rem;
 }
 header li,
@@ -86,7 +103,7 @@ header .mobile img {
 }
 
 /* Fix header for smaller displays */
-@media (max-width: 640px) {
+@media (max-width: 660px) {
   .desktop {
     display: none;
   }
@@ -98,4 +115,51 @@ header .mobile img {
   footer .space-between {
     justify-content: center;
   }
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+}
+
+/*Containers definitions*/
+.container-col-big {
+  width: 60%;
+}
+.container-col-small {
+  width: 40%;
+}
+
+
+/*Banner*/
+.banner .container-col-small {
+  margin: 2.5rem;
+  line-height: 1.2;
+}
+
+.banner .container-col-small .column {
+  width: 80%;
+}
+
+.banner p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 2rem auto;
+}
+
+.button {
+  background-color: #4A4A4A;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.2rem;
 }
