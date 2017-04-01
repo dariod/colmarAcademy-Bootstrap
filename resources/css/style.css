@@ -1,0 +1,78 @@
+/*This is the master style*/
+html {
+  font-family: "Helvetica";
+  font-size: 16px;
+  background-color: gray;
+}
+
+/*Initialise for desktop view*/
+.desktop {
+  display: inherit;
+  width: 100%;
+}
+.mobile {
+  display: none;
+}
+
+/*Shared styles*/
+.std-padding {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+/*Header styling*/
+header {
+  background-color: white;
+  height: 4rem;
+}
+header nav {
+  font-weight: lighter;
+  color: #4A4A4A;
+}
+header nav li {
+  display: inline-flex;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+/*Desktop logo styling*/
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+.logo img {
+  height: 3rem;
+}
+.logo-colmar {
+  font-weight: 600;
+  color: #4A4A4A;
+}
+.logo-academy {
+  font-weight: 200;
+  color: #9B9B9B;
+}
+
+@media (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+}
