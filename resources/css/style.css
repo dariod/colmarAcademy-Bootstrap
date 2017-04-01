@@ -8,7 +8,6 @@ html {
 /*Initialise for desktop view*/
 .desktop {
   display: inherit;
-  width: 100%;
 }
 .mobile {
   display: none;
@@ -31,21 +30,29 @@ html {
 .capitalize {
   text-transform: capitalize;
 }
+.width-100 {
+  width: 100%;
+}
+
+.fineprint {
+  font-size: 0.6rem;
+}
 
 
-/*Header styling*/
-header {
+/*Header and footer styling*/
+header,
+footer {
+  font-weight: lighter;
   background-color: white;
+  color: #4A4A4A;
   height: 4rem;
 }
-header nav {
-  font-weight: lighter;
-  color: #4A4A4A;
-}
-header nav li {
+header li,
+footer li {
   display: inline-flex;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+
 }
 /*Desktop logo styling*/
 .logo {
@@ -67,7 +74,7 @@ header nav li {
   color: #9B9B9B;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 670px) {
   .desktop {
     display: none;
   }
