@@ -59,14 +59,31 @@ h1 {
   font-weight: 900;
   font-size: 2.3rem;
 }
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
 
 
 /*Header and footer styling*/
-header,
-footer {
+header {
   font-weight: lighter;
   height: 4rem;
 }
+
+footer {
+  font-weight: lighter;
+  height: 4rem;
+  border-top: 1px solid #EAEBEC;
+}
+
 header li,
 footer li {
   display: inline-flex;
@@ -127,6 +144,12 @@ header .mobile img {
   display: block;
 }
 
+.container video {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+}
+
 /*Containers definitions*/
 .container-col-big {
   width: 60%;
@@ -165,12 +188,6 @@ header .mobile img {
 }
 
 /*Information section*/
-.info h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-top: 2rem;
-}
-
 .info p {
   font-size: 1rem;
   font-weight: lighter;
@@ -182,4 +199,9 @@ header .mobile img {
   font-size: 0.8rem;
   font-weight: 500;
   margin-top: 2rem;
+}
+
+/*Thesis exhibit section*/
+.info h2 {
+  width: 100%;
 }
