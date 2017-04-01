@@ -136,8 +136,8 @@ header .mobile img {
 }
 
 
-/*Banner*/
-.banner .container-col-small {
+/*Banner section*/
+.container-col-small {
   margin: 2.5rem;
   line-height: 1.2;
 }
@@ -162,4 +162,24 @@ header .mobile img {
   width: 100%;
   text-align: center;
   border-radius: 0.2rem;
+}
+
+/*Information section*/
+.info h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.info p {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.info .quote {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
 }
