@@ -223,9 +223,6 @@ header .mobile img {
   align-content: flex-start;
 }
 
-.horizCard:first-child {
-  padding-top: 0;
-}
 
 .horizCard .vertical {
   width: 70%;
