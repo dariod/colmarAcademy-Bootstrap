@@ -80,6 +80,10 @@ h3 {
   font-size: 1.6rem;
   font-weight: bold;
 }
+h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 
 
 
@@ -145,17 +149,17 @@ header .mobile img {
   }
 }
 
-.container {
+.mediaContainer {
   overflow: hidden;
 }
 
-.container img {
+.mediaContainer img {
   max-width: 100%;
   max-height: auto;
   display: block;
 }
 
-.container video {
+.mediaContainer video {
   max-width: 100%;
   max-height: auto;
   display: block;
@@ -167,8 +171,7 @@ header .mobile img {
 }
 .container-col-small {
   width: 40%;
-  margin: 2.5rem;
-  line-height: 1.2;
+  margin-left: 1.5rem;
 }
 
 
@@ -182,6 +185,7 @@ header .mobile img {
 
 .bannerExtraPadding {
   padding-right: 25%;
+  padding-left: 8%;
 }
 
 .button {
@@ -210,6 +214,35 @@ header .mobile img {
   font-weight: 500;
 }
 
-/*Thesis exhibit section*/
-.info h2 {
+
+/*Small orizontal cards*/
+.horizCard {
+  display: flex;
+  height: 10rem;
+  padding: 1rem;
+  align-content: flex-start;
+}
+
+.horizCard:first-child {
+  padding-top: 0;
+}
+
+.horizCard .vertical {
+  width: 70%;
+  justify-content: space-around;
+  align-content: flex-start;
+  padding: 2rem 0;
+}
+
+.horizCard .mediaContainer {
+  max-height: 100%;
+  max-width: 40%;
+  margin-right: 1rem;
+}
+.horizCard img {
+  display: flex;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
