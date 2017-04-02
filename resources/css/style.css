@@ -84,6 +84,11 @@ h4 {
   font-size: 1.1rem;
   font-weight: bold;
 }
+h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 3rem;
+}
 
 
 
@@ -214,6 +219,14 @@ header .mobile img {
   font-weight: 500;
 }
 
+.info .horizCard:first-child {
+  padding-top: 0;
+}
+
+/*Learning cards container arrangment*/
+.learnGrid {
+  flex-wrap: wrap;
+}
 
 /*Small orizontal cards*/
 .horizCard {
@@ -223,18 +236,47 @@ header .mobile img {
   align-items: center;
 }
 
-
 .horizCard .vertical {
   justify-content: space-around;
   align-content: flex-start;
   padding: 2rem 0;
 }
-
 .horizCard .mediaContainer {
   max-width: 35%;
   margin-right: 1rem;
 }
 .horizCard img {
+   height: auto;
+   max-width: 100%;
+}
+
+
+/*Small vertical cards*/
+.vertCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: white;
+  margin: 1rem;
+  max-width: 30%;
+  height: 45%;
+  color: #4A4A4A;
+}
+
+.vertCard .vertical {
+  margin: 0;
+  padding: 1rem;
+  justify-content: space-between;
+
+}
+
+.vertCard .mediaContainer {
+  height: 45%;
+  width: 100%;
+  margin: 0;
+}
+.vertCard img {
   height: auto;
   max-width: 100%;
 }
