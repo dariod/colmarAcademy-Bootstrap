@@ -1,2 +1,2 @@
 # Codecademy: Freelance Website Development
-## Project: Colmar Academy
+## Project: Colmar Academy - Bootstrap refactoring

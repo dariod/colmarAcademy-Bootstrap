@@ -7,21 +7,30 @@
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>Colmar Academy</title>
+
+
+    <!-- Reset styles -->
     <link rel="stylesheet" href="./resources/css/reset.css">
+
+    <!-- Import bootstrap from Bootstrap CDN: Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Local site styles -->
     <link rel="stylesheet" href="./resources/css/style.css">
-    <!-- <link rel="shortcut icon" href=".ico"> -->
+
+    <title>Colmar Academy</title>
+    <link rel="icon" href="./resources/icons/favicon.ico">
   </head>
   <body>
     <!-- Header -->
-    <header class="globHorPadding flex background-white">
+    <header class="">
       <!-- Desktop layout  -->
-      <div class="desktop width-100 space-between align-center">
-        <div class="logo">
+      <div class="">
+        <div class="">
           <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
-          <span class="logo-colmar">colmar</span><span class="logo-academy">academy</span>
+          <span class="">colmar</span><span class="logo-academy">academy</span>
         </div>
-        <div class="capitalize">
+        <div class="text-capitalize">
           <nav>
             <ul>
               <li>on campus</li>
@@ -33,44 +42,30 @@
         </div>
       </div>
       <!-- Mobile layout -->
-      <div class="mobile width-100 space-between align-center">
+      <!-- <div class="">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
         <img src="./resources/images/ic-on-campus.svg" alt="On Campus">
         <img src="./resources/images/ic-online.svg" alt="On-Line">
         <img src="./resources/images/ic-login.svg" alt="Login">
-      </div>
+      </div> -->
     </header>
 
     <!-- Section 1: two verticals, 60% + 40% -->
-    <section class="banner globHorPadding secVerPadding flex background-dark align-center">
+    <section class="container-fluid">
 
       <!-- Section content, will be divided in two columns -->
-      <div class="flex horizontal">
+      <div class="row">
 
-        <!-- Right column, for imagery -->
-        <div class="container-col-big mediaContainer">
-          <!-- Image goes here -->
-          <img src="./resources/images/banner.jpg" alt="Learn">
-        </div>
+        <!-- Left column, for imagery -->
+        <img class="col-xs-12 col-sm-12 col-md-7 col-lg-7 img-responsive" src="./resources/images/banner.jpg" alt="Students reading">
 
-        <!-- Left column, for ontent items, flowing vertically -->
-        <div class="container-col-small flex align-center">
-
-          <!-- This extra wrapping div is necessary to insert the extra padding
-          on the right of the smaller column content without messing up with the
-          rest of the layout -->
-          <div class="bannerExtraPadding">
-
-            <div class="vertical">
+        <!-- Right column, for content items, flowing vertically -->
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
               <h1>Learn something new every day</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <div class="button capitalize">
-                <span>start here</span>
+              <p class="lead"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>
+              <div class="btn btn-default btn-block">
+                <span class="lead">Start here</span>
               </div>
-            </div>
-
-          </div>
-
         </div>
 
       </div>
@@ -78,231 +73,242 @@
 
 
     <!-- Section 2: two verticals, 60% + 40% -->
-    <section class="info globHorPadding secVerPadding flex background-white align-center">
-
+    <section class="container-fluid">
       <!-- Section content, will be divided in two columns -->
-      <div class="flex horizontal">
+      <div class="row">
 
-        <div class="container-col-big mediaContainer">
-          <div class="vertical">
+          <!-- Left column -->
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
             <!-- Image goes here -->
-            <img src="./resources/images/information-main.jpg" alt="Information">
-            <h2 class="topMarginBig">It doesn&apos;t hurt to keep practicing</h2>
-            <p class="topMarginBig">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;</p>
-            <p class="topMarginBig quote">Emanuel, Senior Strategist at Hiring.com</p>
-          </div>
-        </div>
-        <div class="container-col-small flex vertical">
-
-          <div class="horizCard">
-            <!-- Orientation date card -->
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <img src="./resources/images/information-orientation.jpg" alt="Orientation">
-            </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Orientation date</h4>
-              <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-              <a href="#ReadMore">Read more</a>
-            </div>
-
+            <img class="img-responsive" src="./resources/images/information-main.jpg" alt="Information">
+            <h2 class="">It doesn&apos;t hurt to keep practicing</h2>
+            <p class="">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;</p>
+            <p class="">Emanuel, Senior Strategist at Hiring.com</p>
           </div>
 
-          <div class="horizCard">
-            <!-- Campus location card -->
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <!-- <img src="./resources/images/information-campus.jpg" alt="Campuses"> -->
-              <img src="./resources/images/information-campus.jpg" alt="Campuses">
-            </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Our campus</h4>
-              <p>Find which campus is close by you</p>
-              <a href="#ReadMore">Read more</a>
-            </div>
-          </div>
+          <!-- Right column -->
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 
-          <div class="horizCard background-dark">
-            <!-- Guest speech card -->
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <img src="./resources/images/information-guest-lecture.jpg" alt="Guest">
-            </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Our guest lecture</h4>
-              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-              <a href="#ReadMore">Read more</a>
-            </div>
-          </div>
+            <!-- Small orizontal card format -->
+            <div class="container-fluid">
+              <!-- Imagery -->
+              <div class="row">
+                <img class="img-responsive col-xs-12 col-sm-12 col-md-3 col-lg-3" src="./resources/images/information-orientation.jpg" alt="Orientation">
 
-        </div>
+                <!-- The card text contents flow vertically -->
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                  <h4>Orientation date</h4>
+                  <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+                  <a href="#ReadMore">Read more</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Small orizontal card format -->
+            <div class="container-fluid">
+              <!-- Imagery -->
+              <div class="row">
+                <img class="img-responsive col-xs-12 col-sm-12 col-md-3 col-lg-3" src="./resources/images/information-campus.jpg" alt="Campuses">
+
+                <!-- The card text contents flow vertically -->
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                  <h4>Our campus</h4>
+                  <p>Find which campus is close by you</p>
+                  <a href="#ReadMore">Read more</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Small orizontal card format -->
+            <div class="container-fluid">
+              <!-- Orientation date card -->
+              <!-- Imagery -->
+              <div class="row">
+                <img class="img-responsive col-xs-12 col-sm-12 col-md-3 col-lg-3" src="./resources/images/information-guest-lecture.jpg" alt="Guest">
+
+                <!-- The card text contents flow vertically -->
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                  <h4>Our guest lecture</h4>
+                  <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                  <a href="#ReadMore">Read more</a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
 
       </div>
     </section>
 
 
-    <!-- Section 3: thumbnails -->
-    <section class="globHorPadding secVerPadding flex background-light vertical align-center">
+    <!-- Section 3: courses cards -->
+    <section class="container-fluid">
         <!-- Setion title -->
-        <div class="sectionTitle">
+        <div class="container">
           <h2>Start learning</h2>
         </div>
 
         <!-- Section content, will wrap around in three columns -->
-        <div class="learnGrid flex horizontal justify-center">
+        <div class="container">
 
-          <div class="vertCard">
-            <!-- NewYork study card -->
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <img src="./resources/images/course-software.jpg" alt="Software Engineering">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <!-- Imagery -->
+              <div class="">
+                <img class="img-responsive" src="./resources/images/course-software.jpg" alt="Software Engineering">
+              </div>
+              <!-- The card text contents flow vertically -->
+              <div class="f">
+                <h4>Software engineering</h4>
+                <h5>COURSES</h5>
+                <p>Web Development, Mobile Development, iOT, APIs</p>
+              </div>
             </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Software engineering</h4>
-              <h5>COURSES</h5>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <!-- Imagery -->
+              <div class="">
+                <img class="img-responsive" src="./resources/images/course-computer-art.jpg" alt="Computer art">
+              </div>
+              <!-- The card text contents flow vertically -->
+              <div class="">
+                <h4>Computer art</h4>
+                <h5>COURSES</h5>
+                <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <!-- Imagery -->
+              <div class="">
+                <img class="img-responsive" src="./resources/images/course-design.jpg" alt="Design">
+              </div>
+              <!-- The card text contents flow vertically -->
+              <div class="">
+                <h4>Design</h4>
+                <h5>COURSES</h5>
+                <p>User Experience Design, User Research, Visual Design</p>
+              </div>
             </div>
           </div>
-
-          <div class="vertCard">
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <img src="./resources/images/course-computer-art.jpg" alt="Computer art">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <!-- Imagery -->
+              <div class="">
+                <img class="img-responsive" src="./resources/images/course-data.jpg" alt="Data">
+              </div>
+              <!-- The card text contents flow vertically -->
+              <div class="">
+                <h4>Data</h4>
+                <h5>COURSES</h5>
+                <p>Data Science, Big Data, SQL, Data Visualization</p>
+              </div>
             </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Computer art</h4>
-              <h5>COURSES</h5>
-              <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects,</p>
-              <p>Computer Animation</p>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <!-- Imagery -->
+              <div class="">
+                <img class="img-responsive" src="./resources/images/course-business.jpg" alt="Business">
+              </div>
+              <!-- The card text contents flow vertically -->
+              <div class="">
+                <h4>Business</h4>
+                <h5>COURSES</h5>
+                <p>Product Development, Business Development, Startup</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <!-- Imagery -->
+              <div class="">
+                <img class="img-responsive" src="./resources/images/course-marketing.jpg" alt="Marketing">
+              </div>
+              <!-- The card text contents flow vertically -->
+              <div class="">
+                <h4>Marketing</h4>
+                <h5>COURSES</h5>
+                <p>Analytics, Content Marketing, Mobile Marketing</p>
+              </div>
             </div>
           </div>
-
-          <div class="vertCard">
-            <!-- NewYork study card -->
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <img src="./resources/images/course-design.jpg" alt="Design">
-            </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Design</h4>
-              <h5>COURSES</h5>
-              <p>User Experience Design, User Research, Visual Design</p>
-            </div>
-          </div>
-
-          <div class="vertCard">
-            <!-- NewYork study card -->
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <img src="./resources/images/course-data.jpg" alt="Data">
-            </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Data</h4>
-              <h5>COURSES</h5>
-              <p>Data Science, Big Data, SQL, Data Visualization</p>
-            </div>
-          </div>
-
-          <div class="vertCard">
-            <!-- NewYork study card -->
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <img src="./resources/images/course-business.jpg" alt="Business">
-            </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Business</h4>
-              <h5>COURSES</h5>
-              <p>Product Development, Business Development, Startup</p>
-            </div>
-          </div>
-
-          <div class="vertCard">
-            <!-- NewYork study card -->
-            <!-- Imagery -->
-            <div class="mediaContainer">
-              <img src="./resources/images/course-marketing.jpg" alt="Marketing">
-            </div>
-            <!-- The card text contents flow vertically -->
-            <div class="flex vertical">
-              <h4>Marketing</h4>
-              <h5>COURSES</h5>
-              <p>Analytics, Content Marketing, Mobile Marketing</p>
-            </div>
-          </div>
-
         </div>
 
     </section>
 
     <!-- Section 4: two verticals, 60% + 40% -->
-    <section class="thesis globHorPadding secVerPadding flex background-white vertical align-center">
+
+    <section class="container-fluid">
         <!-- Setion title -->
-        <div class="sectionTitle">
+        <div class="">
           <h2>Thesis exhibit</h2>
         </div>
 
-        <!-- Section content, will be divided in two columns -->
-        <div class="flex horizontal topMarginBig">
+        <!-- Section content, will wrap around in three columns -->
+        <div class="container-fluid">
 
-          <!-- Video/Image box with caption -->
-          <div class="container-col-big mediaContainer">
-            <div class="vertical">
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
               <!-- Video goes here -->
-              <video src="./resources/videos/thesis.mp4" controls="play" loop muted>
+              <video class="img-responsive" src="./resources/videos/thesis.mp4" controls="play" loop muted>
                 Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="./resources/videos/thesis.mp4">download it</a> and watch it with your favorite video player!
               </video>
-              <h4 class="topMarginSmall">Reimagine urban</h4>
-              <p class="topMarginSmall">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;</p>
+              <h4 class="">Reimagine urban</h4>
+              <p class="">&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&rdquo;</p>
             </div>
-          </div>
 
-          <!-- Container for cards on the right side -->
-          <div class="container-col-small flex vertical">
-            <div class="horizCard background-dark">
-              <!-- Fisma card -->
-              <!-- Imagery -->
-              <div class="mediaContainer">
-                <img src="./resources/images/thesis-fisma.jpg" alt="Guest">
+
+            <!-- Container for cards on the right side -->
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+
+              <!-- Small orizontal card format -->
+              <div class="container-fluid">
+                <!-- Imagery -->
+                <div class="row">
+                  <img class="img-responsive col-xs-12 col-sm-12 col-md-3 col-lg-3" src="./resources/images/thesis-fisma.jpg" alt="Designer at work">
+
+                  <!-- The card text contents flow vertically -->
+                  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <h4>Fisma: Desgin and</h4>
+                    <p>Designer showcase of new prototype product</p>
+                  </div>
+
+                </div>
               </div>
-              <!-- The card text contents flow vertically -->
-              <div class="flex vertical">
-                <h4>Fisma: Desgin and</h4>
-                <p>Designer showcase of new prototype product</p>
+
+              <!-- Small orizontal card format -->
+              <div class="container-fluid">
+                <!-- Imagery -->
+                <div class="row">
+                  <img class="img-responsive col-xs-12 col-sm-12 col-md-3 col-lg-3" src="./resources/images/thesis-now-and-then.jpg" alt="New your skyline">
+
+                  <!-- The card text contents flow vertically -->
+                  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <h4>Now and then</h4>
+                    <p>Research study about New York</p>
+                  </div>
+
+                </div>
               </div>
+
             </div>
-            <div class="horizCard">
-              <!-- NewYork study card -->
-              <!-- Imagery -->
-              <div class="mediaContainer">
-                <img src="./resources/images/thesis-now-and-then.jpg" alt="Orientation">
-              </div>
-              <!-- The card text contents flow vertically -->
-              <div class="flex vertical">
-                <h4>Now and then</h4>
-                <p>Research study about New York</p>
-              </div>
-            </div>
+
           </div>
         </div>
 
     </section>
     <!-- Footer -->
-    <footer class="globHorPadding flex fineprint background-white">
-      <div class="flex width-100 space-between align-center">
+    <footer class="">
+      <div class="">
          <!-- Copyright Notice -->
-        <div class="justify-center">
+        <div class="">
           <span>&copy; 2016 Colmar Academy. All rights reserved.</span>
         </div>
         <!-- Terms and privacy notices -->
-        <div class="capitalize desktop">
+        <div class="">
           <ul>
             <li>terms</li>
             <li>privacy</li>
