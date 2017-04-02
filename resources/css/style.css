@@ -70,26 +70,34 @@ html {
 }
 h1 {
   font-weight: 900;
-  font-size: 2.3rem;
+  font-size: 2.6rem;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   font-weight: bold;
 }
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: bold;
+  line-height: 3rem;
 }
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: bold;
+  line-height: 2rem;
 }
 h5 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: lighter;
   line-height: 3rem;
 }
-
+a {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #3D7BDA;
+  font-weight: lighter;
+}
 
 
 /*Header and footer styling*/
@@ -173,6 +181,7 @@ header .mobile img {
 /*Containers definitions*/
 .container-col-big {
   width: 60%;
+  max-width: 60%;
 }
 .container-col-small {
   width: 40%;
@@ -208,10 +217,11 @@ header .mobile img {
   text-align: center;
 }
 
-.info p {
-  font-size: 1rem;
+.info p,
+.thesis p {
+  font-size: 1.2rem;
   font-weight: lighter;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .info .quote {
@@ -226,6 +236,7 @@ header .mobile img {
 /*Learning cards container arrangment*/
 .learnGrid {
   flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 /*Small orizontal cards*/
@@ -237,12 +248,12 @@ header .mobile img {
 }
 
 .horizCard .vertical {
+  min-width: 70%;
   justify-content: space-around;
   align-content: flex-start;
   padding: 2rem 0;
 }
 .horizCard .mediaContainer {
-  max-width: 35%;
   margin-right: 1rem;
 }
 .horizCard img {
@@ -255,25 +266,22 @@ header .mobile img {
 .vertCard {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  /*justify-content: flex-start;*/
   padding: 0;
   background-color: white;
   margin: 1rem;
+  min-width: 10rem;
   max-width: 30%;
-  height: 45%;
   color: #4A4A4A;
 }
 
 .vertCard .vertical {
   margin: 0;
   padding: 1rem;
-  justify-content: space-between;
-
+  justify-content: flex-start;
 }
 
 .vertCard .mediaContainer {
-  height: 45%;
-  width: 100%;
   margin: 0;
 }
 .vertCard img {
