@@ -1,4 +1,41 @@
 /*This is the master style*/
 html {
+  font-size: 16px;
+}
 
+/*Fix navbar height and text vertical alignment for
+larger displays*/
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+  }
+  .navbar-nav li {
+    margin-right: 2rem;
+  }
+  .navbar-nav li:last-child {
+    margin-right: 1rem;
+  }
+}
+
+.navbar-toggle {
+  float: none;
+  border: 0;
+  margin: 0;
+}
+
+#logo {
+  font-size: 1.8rem;
+}
+
+.logoColmar {
+  font-weight: 600;
+  color: #4A4A4A;
+}
+
+.logoAcademy {
+  font-weight: 200;
+  color: #9B9B9B;
 }

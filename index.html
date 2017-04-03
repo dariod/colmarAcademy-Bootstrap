@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
-
-
     <!-- Reset styles -->
     <link rel="stylesheet" href="./resources/css/reset.css">
 
@@ -23,31 +21,49 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="">
+    <header>
+
       <!-- Desktop layout  -->
-      <div class="">
-        <div class="">
-          <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
-          <span class="">colmar</span><span class="logo-academy">academy</span>
+      <nav class="navbar navbar-default" role="navigation">
+
+        <!-- Desktop navbar -->
+        <div class="navbar-collapse collapse container-fluid">
+          <!-- Navbar COLMARACADEMY logo -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <div class="container-fluid text-uppercase" id="logo">
+                <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
+                <span class="logoColmar">colmar</span><span class="logoAcademy">academy</span>
+              </div>
+            </a>
+          </div>
+          <ul class="nav navbar-nav navbar-right text-capitalize">
+            <li>on campus</li>
+            <li>on-line</li>
+            <li>for companies</li>
+            <li>sign in</li>
+          </ul>
+
         </div>
-        <div class="text-capitalize">
-          <nav>
-            <ul>
-              <li>on campus</li>
-              <li>on-line</li>
-              <li>for companies</li>
-              <li>sign in</li>
-            </ul>
-          </nav>
+
+        <!-- Mobile navbar -->
+        <div class="navbar-toggle container-fluid">
+          <div class="row">
+            <div class="col-xs-3 col-sm-3">
+              <img class="img-responsive center-block" src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+              <img class="img-responsive center-block" src="./resources/images/ic-on-campus.svg" alt="On Campus">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+              <img class="img-responsive center-block" src="./resources/images/ic-online.svg" alt="On-Line">
+            </div>
+            <div class="col-xs-3 col-sm-3">
+              <img class="img-responsive center-block " src="./resources/images/ic-login.svg" alt="Login">
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Mobile layout -->
-      <!-- <div class="">
-        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
-        <img src="./resources/images/ic-on-campus.svg" alt="On Campus">
-        <img src="./resources/images/ic-online.svg" alt="On-Line">
-        <img src="./resources/images/ic-login.svg" alt="Login">
-      </div> -->
+      </nav>
     </header>
 
     <!-- Section 1: two verticals, 60% + 40% -->
