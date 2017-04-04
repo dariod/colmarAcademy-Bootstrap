@@ -29,13 +29,26 @@ larger displays*/
 #logo {
   font-size: 1.8rem;
 }
-
 .logoColmar {
   font-weight: 600;
   color: #4A4A4A;
 }
-
 .logoAcademy {
   font-weight: 200;
   color: #9B9B9B;
+}
+
+.thumbnail {
+  border: 0;
+}
+
+.container {
+  padding: 1.5rem 0;
+}
+
+.horizCardPad {
+  padding: 1rem;
+}
+.cards .row:first-child {
+  padding: 0rem 1rem 1rem 1rem;
 }
