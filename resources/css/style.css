@@ -1,11 +1,28 @@
 /*This is the master style*/
 html {
+  /*font-family: helvetica*/
   font-size: 16px;
+}
+
+/*Background colors*/
+.bgDark {
+  background-color: #D8D8D8;
+}
+.bgLight {
+  background-color: #EAEBEC;
+}
+.bgWhite {
+  background-color: #FFFFFF;
+}
+
+/* Fix navbar aspect */
+.navbar {
+  border-radius: 0;
+  border: 0;
 }
 
 /*Fix navbar height and text vertical alignment for
 larger displays*/
-
 @media (min-width: 768px) {
   .navbar {
     height: 4rem;
@@ -26,6 +43,13 @@ larger displays*/
   margin: 0;
 }
 
+
+#header {
+  padding:0;
+  border: 0;
+  border-radius: 0;
+}
+
 #logo {
   font-size: 1.8rem;
 }
@@ -38,12 +62,32 @@ larger displays*/
   color: #9B9B9B;
 }
 
-.thumbnail {
-  border: 0;
+
+.verticalAlign {
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .verticalAlign {
+    height: 384px;
+  }
 }
 
 .container {
-  padding: 1.5rem 0;
+  padding: 1.8rem;
+}
+
+.thumbnail {
+  border: 0;
+  padding: 0;
+}
+
+.thumbnail .caption {
+  min-height: 150px;
 }
 
 .horizCardPad {
@@ -51,4 +95,18 @@ larger displays*/
 }
 .cards .row:first-child {
   padding: 0rem 1rem 1rem 1rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  footer {
+    text-align: center;
+  }
+
+  .removeOnShrink  {
+    display: none;
+  }
 }
