@@ -128,11 +128,17 @@ h2 {
 h3 {
   margin: 1.5rem;
   letter-spacing: 0.12rem;
+  font-size: 1.125rem;
 }
 
 h5 {
   font-weight: lighter;
   letter-spacing: 0.08rem;
+}
+
+a {
+  letter-spacing: 0.08rem;
+  color: #2070D9;
 }
 
 .lead {
@@ -170,7 +176,8 @@ h5 {
 }
 
 @media (max-width: 992px) {
-  #section3 {
+  #section3,
+  #guestLecture {
     background-color: #FFFFFF;
   }
 }

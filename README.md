@@ -3,4 +3,4 @@
 
 
 ## Thing to fix
-* Fix anchors style.
+* Fix horizontal scrolling on mobile view: there is some padding or margin wrong.
